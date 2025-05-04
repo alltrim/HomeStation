@@ -14,16 +14,11 @@ version 1.0
 
 #include <MQUnifiedsensor.h>
 
-/************************Hardware Related Macros************************************/
-#define         Board                   ("Arduino UNO")
-#define         Pin                     (A2)  //Analog input 3 of your arduino
-/***********************Software Related Macros************************************/
-#define         Type                    ("MQ-2") //MQ2
-#define         Voltage_Resolution      (5)
-#define         ADC_Bit_Resolution      (10) // For arduino UNO/MEGA/NANO
-#define         RatioMQ2CleanAir        (9.83) //RS / R0 = 9.83 ppm
+#define Voltage_Resolution  5
+#define ADC_Bit_Resolution  10
+#define RatioMQ2CleanAir    9.83 //RS / R0 = 9.83 ppm
 
-MQUnifiedsensor MQ2(Board, Voltage_Resolution, ADC_Bit_Resolution, Pin, Type);
+MQUnifiedsensor MQ2("Arduino UNO", Voltage_Resolution, ADC_Bit_Resolution, A2, "MQ-2");
 
 LiquidCrystal_PCF8574 lcd(0x27);
 
