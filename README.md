@@ -3,5 +3,5 @@ Arduino home microclimate station
 
 Шкільний проект Тараса Линника
 
-# Schema
+# Схема
 <img width="1024" alt="schema" src="HomeStstion.png">
