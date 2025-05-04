@@ -105,7 +105,7 @@ void loop()
   lcd.print(ppm, 2);
   lcd.print(" PPM");
 
-  if (ppm > 10)
+  if (ppm > RatioMQ2CleanAir)
   {
     lcd.print(" !!   ");
     buzzer.begin(10);
